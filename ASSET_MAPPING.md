@@ -11,7 +11,7 @@ Visual mapping verified from the uploaded ZIP contact sheet.
 | Sports | `usb_kuta/AHRPTWkzENp5Lza80EoSQIiTE0fzBJ6VsuGFtU3DRnWqrewmU-iAzUxiF-xDfiwqAprczMnqiW2hse8oboi9JcpgrNNuky52lPAHF8diY2Bc5QTndXNr_dDNOnpXpc2oXVIvGzwhQ6Qz7mWa1e1Yw4096-h2048-k-no.jpg` | Guests, screens and venue atmosphere. |
 | Events | `usb_kuta/AHRPTWmtbWe70xAomIK3OfJ3Uky29ewlX_46kaM-EFZm-r4HVpTC6IF5AlLT0jL418ViqGEFWf0epANOF3jehT2zmpTRM0sTxLoSVsDLZc2Bv2jIMJ9cBWs65ddgM2tm4pCv9n6ZQADkbJ-oOvncw4096-h2048-k-no.jpg` | Actual promotional/event board. |
 | Location | `usb_kuta/AHRPTWmiSEv197nqJ14XXKJdMPWzKQnnYUENyTiZ_gwW-Py5cgJgMghdKmEVLCRRagzb2AjPEn5RQlsdo6aOZKYG6YkGw5bH3Ni3aCjdV-MRIukDvBk0qBNddxEB7pT9Iqcj02vpGQFOy9LGIVvw4096-h2048-k-no.jpg` | Entrance/exterior branding. |
-| Logo | `usb_kuta/file_0000000057d881faba2dd205f0670fa8.png` | Actual supplied UNI logo. |
+| Logo | `usb_kuta/file_00000000a30481fa9740898c71c943a7.png` | Actual supplied UNI logo. |
 
 ## Food & drinks
 
