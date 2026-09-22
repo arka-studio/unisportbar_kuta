@@ -129,3 +129,17 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
   .final-cta{padding:100px 0}
   .footer-grid{grid-template-columns:1fr}
 }
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+html,body{overflow-x:hidden}
+button,input,a{font:inherit}
+img{background:var(--panel)}
+.hero-media{will-change:transform}
+.image-card,.feature-card,.location-image{contain:paint}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+@supports (padding:max(0px)){
+  .site-header{padding-top:max(0px,env(safe-area-inset-top))}
+  .footer{padding-bottom:max(42px,calc(42px + env(safe-area-inset-bottom)))}
+}
