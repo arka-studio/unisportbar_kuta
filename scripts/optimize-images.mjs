@@ -32,11 +32,11 @@ for (const name of sourcePaths) {
     report.push({ source: name, format: "webp", width: info.width, bytes: info.size });
   }
 
-  const avifWidth = Math.min(isLogo ? 384 : 1600, maxWidth || (isLogo ? 384 : 1600));
-  if (avifWidth > 0) {
-    const target = path.join(outRoot, `${base}-${avifWidth}w.avif`);
+  for (const width of widths) {
+    if (!maxWidth || width > maxWidth) continue;
+    const target = path.join(outRoot, `${base}-${width}w.avif`);
     const info = await sharp(input)
-      .resize({ width: avifWidth, withoutEnlargement: true })
+      .resize({ width, withoutEnlargement: true })
       .avif({ quality: isLogo ? 55 : 52, effort: 6 })
       .toFile(target);
     report.push({ source: name, format: "avif", width: info.width, bytes: info.size });
