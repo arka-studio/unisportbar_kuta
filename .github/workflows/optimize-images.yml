@@ -21,7 +21,9 @@ jobs:
           node-version: 22
 
       - name: Install sharp
-        run: npm install --no-save --no-package-lock sharp@latest
+        run: |
+          npm init -y
+          npm install --no-package-lock sharp@latest
 
       - name: Generate optimized images
         run: node scripts/optimize-images.mjs
