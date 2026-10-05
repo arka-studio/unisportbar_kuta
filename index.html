@@ -20,12 +20,32 @@
   <title>UNI Sport Bar Café — Kuta, Bali</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0TY5E7ZP6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S0TY5E7ZP6');
+    window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-S0TY5E7ZP6');
+
+    function loadGoogleAnalytics() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-S0TY5E7ZP6';
+      document.head.appendChild(script);
+    }
+
+    function scheduleGoogleAnalytics() {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadGoogleAnalytics, { timeout: 2000 });
+      } else {
+        window.setTimeout(loadGoogleAnalytics, 0);
+      }
+    }
+
+    if (document.readyState === 'complete') {
+      scheduleGoogleAnalytics();
+    } else {
+      window.addEventListener('load', scheduleGoogleAnalytics, { once: true });
+    }
   </script>
 </head>
 <body>
