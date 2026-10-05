@@ -133,7 +133,6 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
 html,body{overflow-x:hidden}
 button,input,a{font:inherit}
 img{background:var(--panel)}
-.hero-media{will-change:transform}
 .image-card,.feature-card,.location-image{contain:paint}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
