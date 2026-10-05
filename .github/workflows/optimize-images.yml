@@ -1,0 +1,39 @@
+name: Optimize images
+
+on:
+  push:
+    branches:
+      - perf/image-optimization
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install sharp
+        run: npm install --no-save --no-package-lock sharp@latest
+
+      - name: Generate optimized images
+        run: node scripts/optimize-images.mjs
+
+      - name: Commit optimized assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add usb_kuta/optimized
+          if git diff --cached --quiet; then
+            echo "No optimized assets changed."
+            exit 0
+          fi
+          git commit -m "perf: add optimized image assets [skip ci]"
+          git push
