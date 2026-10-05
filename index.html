@@ -34,11 +34,13 @@
     }
 
     function scheduleGoogleAnalytics() {
-      if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(loadGoogleAnalytics, { timeout: 2000 });
-      } else {
-        window.setTimeout(loadGoogleAnalytics, 0);
-      }
+      window.setTimeout(function() {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadGoogleAnalytics, { timeout: 2000 });
+        } else {
+          loadGoogleAnalytics();
+        }
+      }, 3000);
     }
 
     if (document.readyState === 'complete') {
