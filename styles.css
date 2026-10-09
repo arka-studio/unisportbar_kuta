@@ -82,7 +82,8 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
 .section-location{background:#0a1512}
 .location-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:center}
 .contact{font-size:15px;line-height:1.9;color:#d9e0dc;margin:28px 0}
-.location-image{height:560px;margin:0;overflow:hidden}
+.location-map{height:560px;overflow:hidden;border-radius:4px}
+.location-map iframe{display:block;width:100%;height:100%;border:0}
 .final-cta{padding:150px 0;text-align:center;background:var(--accent);color:#091008}
 .final-cta .eyebrow{color:#315f00}
 .final-cta h2{max-width:900px;margin:0 auto 30px}
@@ -101,7 +102,8 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
   .nav a{padding:10px}
   .nav-toggle:checked~.nav{display:flex}
   .split,.event-grid,.location-grid{grid-template-columns:1fr;gap:45px}
-  .image-card.portrait,.location-image{height:500px}
+  .image-card.portrait{height:500px}
+  .location-map{height:420px}
   .food-grid{grid-template-columns:1fr 1fr}
   .feature-card.feature-large{grid-column:span 2}
   .section-head{align-items:start;flex-direction:column}
@@ -119,7 +121,8 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
   .section{padding:80px 0}
   h2{font-size:50px}
   .stats{margin-top:35px}
-  .image-card.portrait,.location-image{height:400px}
+  .image-card.portrait{height:400px}
+  .location-map{height:360px}
   .food-grid{grid-template-columns:1fr}
   .feature-card,.feature-card.feature-large{grid-column:auto;height:390px}
   .section-sports{min-height:680px}
@@ -133,7 +136,7 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
 html,body{overflow-x:hidden}
 button,input,a{font:inherit}
 img{background:var(--panel)}
-.image-card,.feature-card,.location-image{contain:paint}
+.image-card,.feature-card,.location-map{contain:paint}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
