@@ -82,7 +82,7 @@ Primary intended conversion ialah **WhatsApp table inquiry**. Secondary: tanya j
 
 ### Contact — Medium
 
-Nomor `+62 895-4216-45000`, email `contact@unicafebali.com`, dan WhatsApp dengan nomor yang sama tampak di source. `tel:`/`mailto:` ada di footer. Booking prefill menunjukkan request, bukan reservasi tuntas. Tes call/message/email dan konfirmasi siapa yang menjawab; jangan menambah metode kontak baru.
+Nomor `+628133990099`, email `contact@unicafebali.com`, dan WhatsApp dengan nomor yang sama tampak di source. `tel:`/`mailto:` ada di footer. Booking prefill menunjukkan request, bukan reservasi tuntas. Tes call/message/email dan konfirmasi siapa yang menjawab; jangan menambah metode kontak baru.
 
 ### Directions — Medium
 
