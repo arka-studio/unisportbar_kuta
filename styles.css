@@ -93,6 +93,7 @@ h2{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin-b
 .footer img{width:76px;height:54px;object-fit:contain}
 .footer-grid div{display:flex;flex-direction:column;font-size:13px;color:var(--muted)}
 .footer-grid strong{color:var(--text);margin-bottom:4px}
+.footer-hours{margin-top:10px;line-height:1.7}
 .footer-grid a:hover{color:var(--accent)}
 .footer-copy{font-size:11px!important}
 @media(max-width:900px){

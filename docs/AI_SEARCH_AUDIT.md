@@ -1,5 +1,9 @@
 # Audit AI Search Visibility & Technical SEO
 
+> Pembaruan owner, 19 November 2026: buka setiap hari 10.00–00.00 WITA,
+> last order 23.30 WITA. Visible content dan schema kini disamakan. Rujukan
+> jam lama di bawah adalah temuan historis pada saat audit, bukan jadwal aktif.
+
 **Tanggal pemeriksaan:** 10 Oktober 2026 (UTC; respons production bertanggal 10 Oktober 2026)  
 **Target:** <https://unisportbar.balisuksma.digital/>  
 **Metode:** inspeksi repository, pemeriksaan HTTP read-only ke production, uji user-agent dengan header crawler, serta pencarian publik terbatas. Tidak ada kode aplikasi yang diubah.
