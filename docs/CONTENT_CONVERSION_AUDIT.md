@@ -1,5 +1,9 @@
 # Content, AI Search & Conversion Audit
 
+> Pembaruan owner, 19 November 2026: buka setiap hari 10.00–00.00 WITA,
+> last order 23.30 WITA. Visible content dan schema kini disamakan. Rujukan
+> jam lama di bawah adalah temuan historis pada saat audit, bukan jadwal aktif.
+
 **Tanggal:** 10 Oktober 2026  
 **Repository:** `/home/kenzo/unisportbar/unisportbar_kuta-1`  
 **Production:** <https://unisportbar.balisuksma.digital/>  
